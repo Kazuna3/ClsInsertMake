@@ -273,3 +273,23 @@ public class ClsInsertMake {
 		}
 	}
 }
+
+
+/*
+TsvSample01SJis.tsv
+
+テストテーブル
+num	text	date
+colName1	colName2	colName3
+1	ホゲ	2021/02/23 18:05:00
+2	フガ	2021/02/23 18:06:00
+3	ホゲフガ	2021/02/23 18:07:00
+*/
+
+/*
+OutputInsert.sql
+
+INSERT INTO テストテーブル (colName1, colName2, colName3) VALUES (1, 'ホゲ', TO_DATE ('2021/02/23 18:05:00', 'yyyy/mm/dd HH24:MI:SS'));
+INSERT INTO テストテーブル (colName1, colName2, colName3) VALUES (2, 'フガ', TO_DATE ('2021/02/23 18:06:00', 'yyyy/mm/dd HH24:MI:SS'));
+INSERT INTO テストテーブル (colName1, colName2, colName3) VALUES (3, 'ホゲフガ', TO_DATE ('2021/02/23 18:07:00', 'yyyy/mm/dd HH24:MI:SS'));
+*/
